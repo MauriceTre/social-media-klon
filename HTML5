@@ -9,11 +9,10 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="#home">TechStargram</a>
-    <div class="box">
-        <a href="#Login">Anmelden</a>
-        <a href="#Registrierung">Registrieren</a>
-     </div>   
+        <a  class="box" href="#home">TechStargram</a>
+        <div><a  class="box1" href="#Login">Anmelden</a>
+            <a   href="#Registrierung">Registrieren</a>
+        </div>
     </div>
 </body>
 </html>

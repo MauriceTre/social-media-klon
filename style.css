@@ -8,11 +8,11 @@
             display: flex;
             justify-content: space-between;
             background-color: #689ff8;
-            padding: 10px;
+          
         }
 
         .navbar a {
-            color: white;
+            color: rgb(245, 240, 240);
             text-decoration: none;
             padding: 10px;
         }
@@ -21,4 +21,11 @@
             background-color: #ddd;
             color: black;
         }
+    .box1{
+        justify-content: space-between;
+        background-color: #699ff8;
+       
+        
+    }
+    
     
