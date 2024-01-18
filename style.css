@@ -7,6 +7,7 @@
         .navbar {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             background-color: #689ff8;
           
         }
@@ -21,8 +22,9 @@
             background-color: #ddd;
             color: black;
         }
-    .box1{
+    .box{
         justify-content: space-between;
+        align-items: center;
         background-color: #699ff8;
        
         

@@ -11,7 +11,7 @@
     <div class="navbar">
         <a  class="box" href="#home">TechStargram</a>
         <div><a  class="box1" href="#Login">Anmelden</a>
-            <a   href="#Registrierung">Registrieren</a>
+            <a  href="#Registrierung">Registrieren</a>
         </div>
     </div>
 </body>
