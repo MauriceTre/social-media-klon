@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Beispiel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="navbar">
+    <a href="#home">Startseite</a>
+    <a href="#about">Über uns</a>
+    <a href="#services">Anmelden</a>
+    <a href="#contact">Kontakt</a>
+</div>
+</body>
+</html>
