@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Beispiel</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-<div class="navbar">
-    <a href="#home">Startseite</a>
-    <a href="#about">Über uns</a>
-    <a href="#services">Anmelden</a>
-    <a href="#contact">Kontakt</a>
-</div>
+    <div class="navbar">
+        <a href="#home">TechStargram</a>
+        <a href="#Login">Anmelden</a>
+        <a href="#Registrierung">Registrieren</a>
+    </div>
 </body>
 </html>
