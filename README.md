@@ -8,3 +8,6 @@ mit eingefügten Buttons zum Anmelden und Registrieren,sowie eines Logos.
 
 3. Erstellen  eines Header mit einem vordefiniertem Profil , sowie Buttons zum Liken und Folgen.
 Möglicherweise wird auch eine Message-Funktion als Button miteingefügt.
+
+4. Zweite Navbar eingefügt mit Buttons Für Story, Highlights und Videos
+
