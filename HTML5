@@ -14,8 +14,6 @@
             <a  href="#Registrierung">Registrieren</a>
         </div>
     </div>
-
-<!-- Füge diesen Code in den Body-Bereich deiner HTML-Datei ein -->
 <header>
     <div class="profile">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Farben-Testbild.svg/128px-Farben-Testbild.svg.png" alt="Profilbild">
@@ -27,6 +25,12 @@
         <button class="btn">Nachricht</button>
     </div>
 </header>
+
+<nav class="profile-navbar">
+    <button class="nav-btn">Story</button>
+    <button class="nav-btn">Highlights</button>
+    <button class="nav-btn">Videos</button>
+</nav>
 
 </body>
 </html>

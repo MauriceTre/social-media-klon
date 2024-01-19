@@ -56,6 +56,34 @@
             display: flex;
         }
         
-        /* Weiteren CSS-Code für die Buttons hier hinzufügen */
+        .btn {
+            background-color: #594caf;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .profile-navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #5d7afc;
+        }
         
-    
+        .nav-btn {
+            background-color: #3261a3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        
