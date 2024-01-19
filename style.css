@@ -1,103 +1,87 @@
 /* Stil für die Navbar */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: DeepSkyBlue;
-	        background-image: url("https://wiki.selfhtml.org/images/c/c8/Wolke.png");
-	        background-repeat: repeat;
-	        background-position: 90% top;
-	        color: midnightblue;
-	        height: 100vh;
-        }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: DeepSkyBlue;
+    background-image: url("https://wiki.selfhtml.org/images/c/c8/Wolke.png");
+    background-repeat: repeat;
+    background-position: 90% top;
+    color: midnightblue;
+    height: 100vh;
+}
 
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #173f81;
-    
-        }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #173f81;
 
-        .navbar a {
-            color: rgb(245, 240, 240);
-            text-decoration: none;
-            padding: 10px;
-        }
+}
 
-        .navbar a:hover {
-            background-color: #ddd;
-            color: rgb(245, 87, 87);
-        }
-        .box{
-        justify-content: flex-start;
-        align-items: center;
-        background-color: #173f81;
-        
-        }
-       
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-        }
-        
-        .profile img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-        }
-        
-        .profile h2 {
-            margin-left: 10px;
-        }
-        
-        .buttons {
-            display: flex;
-        }
-        
-        .btn {
-            background-color: #594caf;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 10px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-        .profile-navbar {
-            display: flex;
-            justify-content: center;
-            background-color: #5d7afc;
-        }
-        
-        .nav-btn {
-            background-color: #3261a3;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 10px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-        .image-gallery {
-            display: flex;
-            justify-content: space-between;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
-        
-        .image-gallery img {
-            width: 100px;
-            height: 100px;
-            margin: 10px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
+.navbar a {
+    color: rgb(245, 240, 240);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: rgb(245, 87, 87);
+}
+.box{
+justify-content: flex-start;
+align-items: center;
+background-color: #173f81;
+
+}
+/* Stil für das profil*/
+.flexbox{
+    display:flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.profile {
+    margin-top: 50px;
+    margin-right: 25px;
+}
+
+.profil-kram{
+    margin-top: 50px;  
+}
+
+/* Stil für die kleine navbar*/
+.profile-navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #5d7afc;
+}
+
+.nav-btn {
+    background-color: #3261a3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.image-gallery img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+}

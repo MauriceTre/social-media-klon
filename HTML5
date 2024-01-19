@@ -8,6 +8,7 @@
     
 </head>
 <body>
+    <!-- Navbar -->
     <div class="navbar">
         <a  class="box" href="#home">TechStargram</a>
         <div><a  class="box1" href="#Login">Anmelden</a>
@@ -16,14 +17,33 @@
     </div>
     
 <header>
-    <div class="profile">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Farben-Testbild.svg/128px-Farben-Testbild.svg.png" alt="Profilbild">
-        <h2>Tester</h2>
-    </div>
-    <div class="buttons">
-        <button class="btn">Folgen</button>
-        <button class="btn">Like</button>
-        <button class="btn">Nachricht</button>
+    <!-- Profil -->
+     <div class="flexbox">    
+         <div class="profile">
+             <div class="profil-bild">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Farben-Testbild.svg/128px-Farben-Testbild.svg.png" alt="Profilbild">
+            </div>   
+        </div>    
+        <div class="profil-kram">
+            <div class="profil-info">
+                <label> Tester</label>
+                <button> Folgen </button>
+                <button> Nachricht Senden </button>
+                <button> ... </button>
+            </div>
+            <div class="profil-stats">
+                <label class="stat"> 50 Beiträge </label>
+                <label class="stat"> 99Follower </label>
+                <label class="stat"> 257 gefolgt </label>
+            </div>
+            <div class="profil-bio">
+                <h1>Hallo Welt!</h1>
+                <h5>Mein Name ist Testerin</h5>
+                <h5>Ich bin neu in der It und übe mich gerade in HTML und CSS</h5>
+                <h5>Seht dies bitte nur als kleine Übung, denn ihr werden hoffentlich bald großes von mir hören!</h5>
+                <h5>bis Dahin eure IT Hexe🧙‍♀️ </h5>
+            </div>
+        </div>
     </div>
 </header>
 
@@ -33,14 +53,27 @@
     <button class="nav-btn">Videos</button>
 </nav>
 <div class="image-gallery">
-    <img src="/maurice-test/social-media-klon/img/images.png" alt="Bild 1">
-    <img src="/maurice-test/social-media-klon/img/images (1).png" alt="Bild 2">
-    <img src="/maurice-test/social-media-klon/img/images (2).png" alt="Bild 3">
-    <img src="/maurice-test/social-media-klon/img/images (3).png" alt="Bild 4">
-    <img src="/maurice-test/social-media-klon/img/images (4).png" alt="Bild 5">
-    <img src="/maurice-test/social-media-klon/img/images (5).png" alt="Bild 6">
-    <img src="/maurice-test/social-media-klon/img/restart.png" alt="Bild 7">
+    <div class="col"> 
+        <img src="/maurice-test/social-media-klon/img/images.png" alt="Bild 1">
+        <img src="/maurice-test/social-media-klon/img/images (1).png" alt="Bild 2">
+        <img src="/maurice-test/social-media-klon/img/images (2).png" alt="Bild 3">
+    </div>
+    <div class="col">
+        <img src="/maurice-test/social-media-klon/img/images (3).png" alt="Bild 4">
+        <img src="/maurice-test/social-media-klon/img/images (4).png" alt="Bild 5">
+        <img src="/maurice-test/social-media-klon/img/images (5).png" alt="Bild 6">
+        <img src="/maurice-test/social-media-klon/img/software development life cicle.jpg" alt="Bild 11">
+    </div>
+    <div class="col">
+        <img src="/maurice-test/social-media-klon/img/restart.png" alt="Bild 7">
+        <img src="/maurice-test/social-media-klon/img/berater.png" alt="Bild 8">
+        <img src="/maurice-test/social-media-klon/img/Download.jpg" alt="Bild 9">
+        <img src="/maurice-test/social-media-klon/img/EC2 aufbau.png" alt="Bild 10">
+    </div>
 
+</div>
+ 
+    
 
 
 
