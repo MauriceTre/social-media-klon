@@ -11,3 +11,8 @@ Möglicherweise wird auch eine Message-Funktion als Button miteingefügt.
 
 4. Zweite Navbar eingefügt mit Buttons Für Story, Highlights und Videos
 
+5. Bilder eingefügt und in Spalten formatiert.
+
+6. Anmeldeseite und Registrierungsseite erstellst auf der index seite verlinkt.
+
+7. Datenbank erstellt und mit vordefinierten benutzern angelegt.
