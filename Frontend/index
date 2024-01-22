@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Beispiel</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="variable.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -63,6 +63,8 @@
         <img src="/maurice-test/social-media-klon/img/images (4).png" alt="Bild 5">
         <img src="/maurice-test/social-media-klon/img/images (5).png" alt="Bild 6">
         <img src="/maurice-test/social-media-klon/img/software development life cicle.jpg" alt="Bild 11">
+        <img src="/maurice-test/social-media-klon/img/free-baby-star-clipart-9of98.webp" alt="bild 12">
+        <img src="/maurice-test/social-media-klon/img/EC2 aufbau.png" alt="bild13">
     </div>
     <div class="col">
         <img src="/maurice-test/social-media-klon/img/restart.png" alt="Bild 7">
@@ -80,4 +82,8 @@
 </div>
 
 </body>
+<footer><div class="h1">
+            <h1>Impressum</h1>
+        </div>    
+</footer>
 </html>

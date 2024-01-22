@@ -2,15 +2,17 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: DeepSkyBlue;
+    background-color: var(--secondary-color);
     background-image: url("https://wiki.selfhtml.org/images/c/c8/Wolke.png");
     background-repeat: repeat;
     background-position: 90% top;
     color: midnightblue;
-    height: 100vh;
-}
+    height: 100vh;    
+    }
+
 
 .navbar {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,6 +43,7 @@ background-color: #173f81;
     margin-top: 15px;
 }
 .profile {
+    
     margin-top: 50px;
     margin-right: 25px;
 }
@@ -84,4 +87,14 @@ background-color: #173f81;
     margin: 10px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.h1{
+margin-left: 50%;
+
+}
+
+@media screen and (max-with:750px) {
+    .image-gallery
+
 }
