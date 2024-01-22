@@ -2,11 +2,11 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: var(--secondary-color);
+    background-color: rgb(97, 97, 252);
     background-image: url("https://wiki.selfhtml.org/images/c/c8/Wolke.png");
     background-repeat: repeat;
     background-position: 90% top;
-    color: midnightblue;
+    color: rgb(45, 45, 184);
     height: 100vh;    
     }
 
@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var()
+    background-color: rgb(25, 25, 121)
 
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 .navbar a:hover {
-    background-color:var(--secondary-color);
+    background-color:blue
 }
 .box{
 justify-content: flex-start;
