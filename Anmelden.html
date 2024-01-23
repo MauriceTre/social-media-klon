@@ -24,23 +24,31 @@
                 <label for="password">Passwort:</label>
                 <input type="password" id="password" name="password" required>
 
+                
+
                 <a href="/maurice-test/social-media-klon/index.html" onclick="submitForm()">Anmelden</a>
             </form>
+            <div id="jsonOutput"></div>
         </div>
     </header>
 
     <script>
+        
         function submitForm() {
             var email = document.getElementById('email').value;
             var password = document.getElementById('password').value;
-
+            
             const userData = {
                 email: email,
-                password: password
+                password: password,
             };
-
             console.log('JSON Data:', userData);
+            var jsonOutput = document.getElementById('jsonOutput');
+            jsonOutput.innerText = 'JSON Data:\n' + JSON.stringify(userData, null, 2);
         }
+        
+
+            
     </script>
 </body>
 </html>

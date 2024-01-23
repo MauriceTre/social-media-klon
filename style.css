@@ -7,17 +7,16 @@ body {
     background-repeat: repeat;
     background-position: 90% top;
     color: rgb(45, 45, 184);
-    height: 100vh;    
-    }
+    height: 100vh;
+}
 
 
 .navbar {
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(25, 25, 121)
-
 }
 
 .navbar a {
@@ -27,29 +26,32 @@ body {
 }
 
 .navbar a:hover {
-    background-color:blue
+    background-color: blue
 }
-.box{
-justify-content: flex-start;
-align-items: center;
-background-color: #173f81;
+
+.box {
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #173f81;
 
 }
+
 /* Stil für das profil*/
-.flexbox{
-    display:flex;
+.flexbox {
+    display: flex;
     justify-content: center;
     margin-top: 15px;
-    
+
 }
+
 .profile {
-    
+
     margin-top: 50px;
     margin-right: 25px;
 }
 
-.profil-kram{
-    margin-top: 50px;  
+.profil-kram {
+    margin-top: 50px;
 }
 
 /* Stil für die kleine navbar*/
@@ -89,11 +91,12 @@ background-color: #173f81;
     border-radius: 10px;
 }
 
-.h1{
-margin-left: 50%
+.h1 {
+    margin-left: 50%
 }
 
-@media screen and (max-with: 500px) {
-    .flexbox
-    justify-content:row;
+@media screen and (max-width: 500px) {
+    .flexbox {
+        justify-content: row;
+    }
 }
