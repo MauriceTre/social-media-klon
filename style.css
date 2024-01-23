@@ -100,3 +100,20 @@ body {
         justify-content: row;
     }
 }
+
+@media screen and (max-width: 380px) {
+    .flexbox {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    @media screen and (max-width: 380px) {
+
+        /* Styles for screens up to 380px wide go here */
+        body {
+            /* Example: Change the background color for screens up to 380px wide */
+            background-color: lightblue;
+            flex-direction: column;
+        }
+    }

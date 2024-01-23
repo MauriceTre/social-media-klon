@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Anmelden</title>
 </head>
+
 <body>
     <!-- Navbar -->
     <div class="navbar">
@@ -24,7 +26,7 @@
                 <label for="password">Passwort:</label>
                 <input type="password" id="password" name="password" required>
 
-                
+
 
                 <a href="/maurice-test/social-media-klon/index.html" onclick="submitForm()">Anmelden</a>
             </form>
@@ -33,22 +35,23 @@
     </header>
 
     <script>
-        
+
         function submitForm() {
-            var email = document.getElementById('email').value;
-            var password = document.getElementById('password').value;
-            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
             const userData = {
                 email: email,
                 password: password,
             };
             console.log('JSON Data:', userData);
-            var jsonOutput = document.getElementById('jsonOutput');
+            const jsonOutput = document.getElementById('jsonOutput');
             jsonOutput.innerText = 'JSON Data:\n' + JSON.stringify(userData, null, 2);
         }
-        
 
-            
+
+
     </script>
 </body>
+
 </html>
