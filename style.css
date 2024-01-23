@@ -90,6 +90,10 @@ background-color: #173f81;
 }
 
 .h1{
-margin-left: 50%;
+margin-left: 50%
+}
 
+@media screen and (max-with: 500px) {
+    .flexbox
+    justify-content:row;
 }
