@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,83 +8,156 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="variable.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <a  class="box" href="#home">TechStargram</a>
-        <div><a  class="box1" href="/maurice-test/social-media-klon/Anmelden.html">Anmelden</a>
-            <a  href="/maurice-test/social-media-klon/Registrierung.html">Registrieren</a>
+        <a class="box" href="#home">TechStargram</a>
+        <div><a class="box1" href="/maurice-test/social-media-klon/Anmelden.html">Anmelden</a>
+            <a href="/maurice-test/social-media-klon/Registrierung.html">Registrieren</a>
+        </div>
+    </div>
+
+    <header>
+        <!-- Profil -->
+        <div class="flexbox">
+            <div class="profile">
+                <div class="profil-bild">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Farben-Testbild.svg/128px-Farben-Testbild.svg.png"
+                        alt="Profilbild">
+                </div>
+            </div>
+            <div class="profil-kram">
+                <div class="profil-info">
+                    <label> Tester</label>
+                    <button> Folgen </button>
+                    <button> Nachricht Senden </button>
+                    <button> ... </button>
+                </div>
+                <div class="profil-stats">
+                    <label class="stat"> 50 Beiträge </label>
+                    <label class="stat"> 99Follower </label>
+                    <label class="stat"> 257 gefolgt </label>
+                </div>
+                <div class="profil-bio">
+                    <h1>Hallo Welt!</h1>
+                    <h5>Mein Name ist Testerin</h5>
+                    <h5>Ich bin neu in der It und übe mich gerade in HTML und CSS</h5>
+                    <h5>Seht dies bitte nur als kleine Übung, denn ihr werden hoffentlich bald großes von mir hören!
+                    </h5>
+                    <h5>bis Dahin eure IT Hexe🧙‍♀️ </h5>
+                </div>
+            </div>
+        </div>
+        <div class="message">
+            <button onclick="nachrichtSenden()">Nachricht senden</button>
+            <button onclick="nachrichtenAnzeigen('Tester')">Nachrichten anzeigen</button>
+        </div>
+        <div id="modal">
+            <label for="nachrichtInput">Nachricht eingeben:</label>
+            <textarea id="nachrichtInput" rows="4" cols="50"></textarea><br>
+            <button onclick="sendenUndSchließen()">Senden</button>
+            <button onclick="schließen()">Abbrechen</button>
+        </div>
+
+        <script>
+            class Nachricht {
+                constructor(absender, empfaenger, nachrichtText) {
+                    this.absender = absender;
+                    this.empfaenger = empfaenger;
+                    this.nachrichtText = nachrichtText;
+                    this.gelesen = false;
+                }
+            }
+
+            class NachrichtenFunktion {
+                constructor() {
+                    this.nachrichten = [];
+                }
+                nachrichtSenden() {
+                    document.getElementById('modal').style.display = 'block';
+                }
+
+                sendenUndSchließen() {
+                    const absender = "Tester"; // Hier könntest du den Absender dynamisch setzen
+                    const empfaenger = "Tester";
+                    const nachrichtText = document.getElementById('nachrichtInput').value;
+                    const nachricht = new Nachricht(absender, empfaenger, nachrichtText);
+                    this.nachrichten.push(nachricht);
+                    alert("Nachricht gesendet!");
+                }
+
+                nachrichtenAnzeigen(empfaenger) {
+                    const ungeleseneNachrichten = this.nachrichten.filter(
+                        (nachricht) => nachricht.empfaenger === empfaenger && !nachricht.gelesen
+                    );
+
+                    ungeleseneNachrichten.forEach((nachricht) => {
+                        alert(`Neue Nachricht von ${nachricht.absender}: ${nachricht.nachrichtText}`);
+                        nachricht.gelesen = true;
+                    });
+                }
+            }
+
+            const nachrichtenFunktion = new NachrichtenFunktion();
+            function schließen() {
+                document.getElementById('modal').style.display = 'none';
+            }
+
+            function sendenUndSchließen() {
+                nachrichtenFunktion.sendenUndSchließen();
+            }
+        </script>
+
+    </header>
+
+    <nav class="profile-navbar">
+        <button class="nav-btn">Story</button>
+        <button class="nav-btn">Highlights</button>
+        <button class="nav-btn">Videos</button>
+    </nav>
+    <div id="loading-screen">
+        <p>Lade...</p>
+    </div>
+    
+    <div class="image-gallery">
+        <div class="col">
+            <img src="./img/images (1).png" alt="Bild 1">
+            <img src="./img/images (2).png" alt="Bild 2">
+            <img src="./img/images (3).png" alt="Bild 3">
+        </div>
+        <div class="col">
+            <img src="./img/images (4).png" alt="Bild 4">
+            <img src="./img/images (5).png" alt="Bild 5">
+            <img src="./img/images.png" alt="Bild 6">
+            <img src="./img/software development life cicle.jpg" alt="Bild 11">
+            <img src="./img/berater.png" alt="bild 12">
+            <img src="./img/CSS-Help-Sheet.jpg" alt="bild13">
+        </div>
+        <div class="col">
+            <img src="./img/Download.jpg" alt="Bild 7">
+            <img src="./img/EC2 aufbau.png" alt="Bild 8">
+            <img src="./img/restart.png" alt="Bild 9">
+            <img src="./img/free-baby-star-clipart-9of98.webp" alt="Bild 10">
         </div>
     </div>
     
-<header>
-    <!-- Profil -->
-     <div class="flexbox">    
-         <div class="profile">
-             <div class="profil-bild">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Farben-Testbild.svg/128px-Farben-Testbild.svg.png" alt="Profilbild">
-            </div>   
-        </div>    
-        <div class="profil-kram">
-            <div class="profil-info">
-                <label> Tester</label>
-                <button> Folgen </button>
-                <button> Nachricht Senden </button>
-                <button> ... </button>
-            </div>
-            <div class="profil-stats">
-                <label class="stat"> 50 Beiträge </label>
-                <label class="stat"> 99Follower </label>
-                <label class="stat"> 257 gefolgt </label>
-            </div>
-            <div class="profil-bio">
-                <h1>Hallo Welt!</h1>
-                <h5>Mein Name ist Testerin</h5>
-                <h5>Ich bin neu in der It und übe mich gerade in HTML und CSS</h5>
-                <h5>Seht dies bitte nur als kleine Übung, denn ihr werden hoffentlich bald großes von mir hören!</h5>
-                <h5>bis Dahin eure IT Hexe🧙‍♀️ </h5>
-            </div>
-        </div>
+    <script>
+        // Timeout für den Ladebildschirm (2 Sekunden)
+        setTimeout(function () {
+            document.getElementById('loading-screen').style.display = 'none';
+            document.querySelector('.image-gallery').style.opacity = '1';
+            document.querySelector('.image-gallery').style.visibility = 'visible';
+        }, 2000);
+    </script>
     </div>
-</header>
-
-<nav class="profile-navbar">
-    <button class="nav-btn">Story</button>
-    <button class="nav-btn">Highlights</button>
-    <button class="nav-btn">Videos</button>
-</nav>
-<div class="image-gallery">
-    <div class="col"> 
-        <img src="/maurice-test/social-media-klon/img/images.png" alt="Bild 1">
-        <img src="/maurice-test/social-media-klon/img/images (1).png" alt="Bild 2">
-        <img src="/maurice-test/social-media-klon/img/images (2).png" alt="Bild 3">
-    </div>
-    <div class="col">
-        <img src="/maurice-test/social-media-klon/img/images (3).png" alt="Bild 4">
-        <img src="/maurice-test/social-media-klon/img/images (4).png" alt="Bild 5">
-        <img src="/maurice-test/social-media-klon/img/images (5).png" alt="Bild 6">
-        <img src="/maurice-test/social-media-klon/img/software development life cicle.jpg" alt="Bild 11">
-        <img src="/maurice-test/social-media-klon/img/free-baby-star-clipart-9of98.webp" alt="bild 12">
-        <img src="/maurice-test/social-media-klon/img/EC2 aufbau.png" alt="bild13">
-    </div>
-    <div class="col">
-        <img src="/maurice-test/social-media-klon/img/restart.png" alt="Bild 7">
-        <img src="/maurice-test/social-media-klon/img/berater.png" alt="Bild 8">
-        <img src="/maurice-test/social-media-klon/img/Download.jpg" alt="Bild 9">
-        <img src="/maurice-test/social-media-klon/img/EC2 aufbau.png" alt="Bild 10">
-    </div>
-
-</div>
- 
-    
-
-
-
-</div>
 
 </body>
-<footer><div class="h1">
-            <h1>Impressum</h1>
-        </div>    
+<footer>
+    <div class="h1">
+        <h1>Impressum</h1>
+    </div>
 </footer>
+
+
 </html>

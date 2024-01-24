@@ -53,6 +53,11 @@ body {
 .profil-kram {
     margin-top: 50px;
 }
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Stil für die kleine navbar*/
 .profile-navbar {
@@ -107,6 +112,7 @@ body {
         flex-direction: column;
 
     }
+}
 
     @media screen and (max-width: 380px) {
 
@@ -116,4 +122,36 @@ body {
             background-color: lightblue;
             flex-direction: column;
         }
+    }
+
+    #loading-screen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-gallery {
+        max-width: 800px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-between;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 1s ease, visibility 1s ease;
+    }
+
+    .col {
+        flex: 1;
+        padding: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
     }
